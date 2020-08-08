@@ -27,7 +27,7 @@ steps:
     testRunTitle: 'Testes'
     codeCoverageToolOption: 'JaCoCo'
     codeCoverageClassFilesDirectories: 'build/classes/main/'
-    codeCoverageFailIfEmpty: true
+    codeCoverageFailIfEmpty: false
     javaHomeOption: 'JDKVersion'
     jdkVersionOption: '1.8'
     sonarQubeRunAnalysis: false
