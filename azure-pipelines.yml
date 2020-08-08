@@ -25,9 +25,6 @@ steps:
     publishJUnitResults: true
     testResultsFiles: '**/TEST-*.xml'
     testRunTitle: 'Testes'
-    codeCoverageToolOption: 'JaCoCo'
-    codeCoverageClassFilesDirectories: 'build/classes/main/'
-    codeCoverageFailIfEmpty: false
     javaHomeOption: 'JDKVersion'
     jdkVersionOption: '1.8'
     sonarQubeRunAnalysis: false
