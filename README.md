@@ -32,6 +32,39 @@ until finished
 
 End with an example of getting some data out of the system or using it for a little demo
 
+## Problemas com o JDK
+
+Ao importar o projeto no intelliJ aparecerá o seguinte pop-up: selecione a primeira opção "Import Gradle Project".
+
+![Imagem1](file/Imagem1.png)
+
+Entretanto, pode ser que o IntelliJ não consiga reconhecer corretamente o projeto e as pastas fiquem assim:
+
+![Imagem2](file/Imagem2.png)
+
+Isso pode acontecer devido ao fato das suas JDK's estarem corrompidas. 
+Para solucionar esse problema baixe uma nova JDK e também será necessário configura-la em 3 lugares distintos.
+Para isso vá em `File > Project Structure`. Na opção SDKs, clique no `+` e adicione o Java 8 do vendor doptOpenJDK (OpenJ9): 
+
+![Imagem3](file/Imagem3.png)
+
+Após baixar o novo JDK, vá à opção `Project` e selecione-o:
+
+![Imagem4](file/Imagem4.png)
+
+Selecione o novo JDK na opção `Modules`:
+
+![Imagem5](file/Imagem5.png)
+
+Verifique também qual SDK está selecionado em `IntelliJ > Preferences > Build, Execution, Deployment > Build Tools > Gradle`
+
+![Imagem6](file/Imagem6.png)
+
+Caso o IntelliJ não consiga indexar sozinho com as novas configurações, será necessário fechar o projeto em `File > Close Project`.
+E também remover da janela de abertura do Intellij para então reabri-lo novamente.
+
+![Imagem7](file/Imagem7.png)
+
 ## Running the tests
 
 Explain how to run the automated tests for this system
