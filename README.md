@@ -65,6 +65,16 @@ E também remover da janela de abertura do Intellij para então reabri-lo novame
 
 ![Imagem7](file/Imagem7.png)
 
+## BOAS PRÁTICAS COM O GIT
+ - Antes de começar a trabalhar na sua branch faça:
+    - git fetch origin
+    - git checkout master
+    - git pull master
+    - git checkout (sua branch)
+    - git rebase master
+ 
+ Atualizar suas branch local e manter ela atualizada com a master.
+
 ## Running the tests
 
 Explain how to run the automated tests for this system
